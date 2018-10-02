@@ -63,7 +63,7 @@ public class ViewCell<ViewType : UIView> : Cell<String>, CellType {
             }
         }
         
-        notificationObserver = NotificationCenter.default.addObserver(forName: UIContentSizeCategory.didChangeNotification,
+        notificationObserver = NotificationCenter.default.addObserver(forName: Notification.Name.UIContentSizeCategoryDidChange,
                                                                       object: nil,
                                                                       queue: nil,
                                                                       using: { [weak self] (note) in
